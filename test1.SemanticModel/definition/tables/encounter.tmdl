@@ -5,6 +5,11 @@ table encounter
 		formatString: 0
 		lineageTag: 80580696-8a7c-4797-b8cf-abc049a9001a
 
+	measure m_LI = SUM(encounter[los])/ SUM(encounter[expected_los])
+		lineageTag: 83af5fb8-0e17-477d-970d-2c41de20aa33
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column encounter_key
 		dataType: string
 		sourceProviderType: nvarchar(2048)
