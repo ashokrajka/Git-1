@@ -10,6 +10,11 @@ table encounter
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure m_DCI = SUM(encounter[total_direct_cost])/ SUM(encounter[expected_cost])
+		lineageTag: 2559a2d8-5474-40d3-bec3-f717124de034
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column encounter_key
 		dataType: string
 		sourceProviderType: nvarchar(2048)
